@@ -16,7 +16,7 @@ with DAG(
     )
 
     t1_avocado = BashOperator(
-        task_id = "t1_orange",
+        task_id = "t1_avocado",
         bash_command="/opt/airflow/plugins/shell/select_fruit.sh AVOCADO"   # 실행하기 이전에 chmod +x 파일명으로 실행 권한 부여하기!
     )
 
