@@ -5,7 +5,7 @@ from airflow.operators.trigger_dagrun import TriggerDagRunOperator
 
 with DAG(
     dag_id="dags_trigger_dag_run_operator",
-    schedule=None,               # 30분 6시 매일 매월 매요일
+    schedule=None,              
     start_date=pendulum.datetime(2023, 12, 1, tz="Asia/Seoul"),
     catchup=False
 ) as dag:
